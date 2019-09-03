@@ -18,7 +18,7 @@ namespace selenium_ao.Steps
         public void GivenIAmOnTheEspressoMachinesListerPage()
         {
             smallAppliancesPg.ClickCoffeeBtn();
-            Thread.Sleep(1000);
+            Thread.Sleep(2000);
             coffeeMachinesPg.ClickEspressoBtn();
 
             try
