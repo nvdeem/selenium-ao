@@ -59,6 +59,7 @@ C:\Users\ahmedn\Documents\GitHub\selenium-ao\selenium-ao\bin\Debug\System.ValueT
 C:\Users\ahmedn\Documents\GitHub\selenium-ao\selenium-ao\bin\Debug\TechTalk.SpecFlow.dll
 C:\Users\ahmedn\Documents\GitHub\selenium-ao\selenium-ao\bin\Debug\Utf8Json.dll
 C:\Users\ahmedn\Documents\GitHub\selenium-ao\selenium-ao\bin\Debug\WebDriver.dll
+C:\Users\ahmedn\Documents\GitHub\selenium-ao\selenium-ao\bin\Debug\WebDriver.Support.dll
 C:\Users\ahmedn\Documents\GitHub\selenium-ao\selenium-ao\bin\Debug\BoDi.pdb
 C:\Users\ahmedn\Documents\GitHub\selenium-ao\selenium-ao\bin\Debug\Google.Protobuf.pdb
 C:\Users\ahmedn\Documents\GitHub\selenium-ao\selenium-ao\bin\Debug\Google.Protobuf.xml
@@ -73,8 +74,8 @@ C:\Users\ahmedn\Documents\GitHub\selenium-ao\selenium-ao\bin\Debug\TechTalk.Spec
 C:\Users\ahmedn\Documents\GitHub\selenium-ao\selenium-ao\bin\Debug\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.pdb
 C:\Users\ahmedn\Documents\GitHub\selenium-ao\selenium-ao\bin\Debug\Utf8Json.xml
 C:\Users\ahmedn\Documents\GitHub\selenium-ao\selenium-ao\bin\Debug\WebDriver.xml
+C:\Users\ahmedn\Documents\GitHub\selenium-ao\selenium-ao\bin\Debug\WebDriver.Support.xml
 C:\Users\ahmedn\Documents\GitHub\selenium-ao\selenium-ao\obj\Debug\selenium-ao.csproj.CoreCompileInputs.cache
 C:\Users\ahmedn\Documents\GitHub\selenium-ao\selenium-ao\obj\Debug\selenium-ao.csproj.CopyComplete
 C:\Users\ahmedn\Documents\GitHub\selenium-ao\selenium-ao\obj\Debug\selenium-ao.dll
 C:\Users\ahmedn\Documents\GitHub\selenium-ao\selenium-ao\obj\Debug\selenium-ao.pdb
-C:\Users\ahmedn\Documents\GitHub\selenium-ao\selenium-ao\obj\Debug\selenium-ao.csprojAssemblyReference.cache

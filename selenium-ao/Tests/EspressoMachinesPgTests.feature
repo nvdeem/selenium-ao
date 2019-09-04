@@ -15,3 +15,9 @@ Scenario: Toggle colour facet to stainless steel
 	Given I am on the espresso machines lister page
 	When I click the stainless steel facet
 	Then only the stainless steel products are displayed
+
+@Test3
+Scenario: Toggle dropdown and select price low to high
+	Given I am on the espresso machines lister page
+	When I toggle the sort by dropdown to price low to high
+	Then the items are listed from lowest price to highest

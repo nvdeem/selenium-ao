@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,22 +12,28 @@ namespace selenium_ao.PageObjects
     {
         /* Elements */
         
-        //--  Espresso title
+        // Espresso title
         private IWebElement EspressoListerTitle()
         {
             return WebDriver.Browser.FindElement(By.XPath("//h1[normalize-space(.) = 'Espresso Coffee Machines']"));
         }
 
-        //-- DeLonghi - More Info Button
+        // DeLonghi - More Info Button
         private IWebElement DeLonghiMoreInfoBtn()
         {
             return WebDriver.Browser.FindElement(By.XPath("//a[starts-with(@href, '/product/ec685bk-delonghi-dedica-traditional-pump-espresso-coffee-machine-black-51597-66.aspx')]"));
         }
 
-        //-- Silver Facet
+        // Silver Facet
         private IWebElement ColourFilterSteel()
         {
             return WebDriver.Browser.FindElement(By.XPath("//li[@id='fv_stainless20steel']"));
+        }
+
+        // Sort by dropdown
+        private IWebElement SortByDropDown()
+        {
+            return WebDriver.Browser.FindElement(By.XPath("//select[@id='ddlSortBy']"));
         }
 
         /* Checks */
@@ -38,6 +45,11 @@ namespace selenium_ao.PageObjects
         public bool FilterSteelDisplayed()
         {
             return ColourFilterSteel().Displayed;
+        }
+
+        public bool SortByDropDownDisplayed()
+        {
+            return SortByDropDown().Displayed;
         }
 
         /* Actions */
@@ -59,6 +71,18 @@ namespace selenium_ao.PageObjects
         public void ToggleColourFilterSteel()
         {
             WebDriver.Browser.FindElement(By.XPath("//li[@id='fv_stainless20steel']")).Click();
+        }
+
+        public void ToggleSortByDropDown()
+        {
+            WebDriver.Browser.FindElement(By.CssSelector("#ddlSortBy")).Click();
+        }
+
+        public void SelectLowToHigh()
+        {
+            var lowToHigh = WebDriver.Browser.FindElement(By.XPath("//div[@id='productListerPage']//select[@id='ddlSortBy']"));
+            var selectElement = new SelectElement(lowToHigh);
+            selectElement.SelectByText("Price: Low to High");
         }
     }
 }

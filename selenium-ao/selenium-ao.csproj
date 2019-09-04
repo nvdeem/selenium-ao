@@ -87,6 +87,9 @@
     <Reference Include="WebDriver, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Selenium.WebDriver.3.141.0\lib\net45\WebDriver.dll</HintPath>
     </Reference>
+    <Reference Include="WebDriver.Support, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.3.141.0\lib\net45\WebDriver.Support.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Drivers\Runner.cs" />
@@ -100,6 +103,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Drivers\WebDriver.cs" />
     <Compile Include="Steps\ToggleFacetToSteelTestSteps.cs" />
+    <Compile Include="Steps\ToggleLowToHighTestSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

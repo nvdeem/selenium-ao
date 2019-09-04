@@ -17,6 +17,7 @@ namespace selenium_ao.Steps
         [Given(@"I am on the espresso machines lister page")]
         public void GivenIAmOnTheEspressoMachinesListerPage()
         {
+            Thread.Sleep(2000);
             smallAppliancesPg.ClickCoffeeBtn();
             Thread.Sleep(2000);
             coffeeMachinesPg.ClickEspressoBtn();
@@ -33,7 +34,7 @@ namespace selenium_ao.Steps
                     "------------- Stack Trace -------------" + Environment.NewLine + e.StackTrace);
             }
         }
-        
+
         [Given(@"I have changed the view to grid view")]
         public void GivenIHaveChangedTheViewToGridView()
         {
@@ -48,14 +49,14 @@ namespace selenium_ao.Steps
                      "------------- Stack Trace -------------" + Environment.NewLine + e.StackTrace);
             }
         }
-        
+
         [When(@"I click the more info button")]
         public void WhenIClickTheMoreInfoButton()
         {
             Thread.Sleep(1000);
             espressoListerPg.ClickMoreInfoDeLonghi();
         }
-        
+
         [Then(@"the delonghi item product page is displayed")]
         public void ThenTheDelonghiItemProductPageIsDisplayed()
         {
