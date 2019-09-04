@@ -23,10 +23,21 @@ namespace selenium_ao.PageObjects
             return WebDriver.Browser.FindElement(By.XPath("//a[starts-with(@href, '/product/ec685bk-delonghi-dedica-traditional-pump-espresso-coffee-machine-black-51597-66.aspx')]"));
         }
 
+        //-- Silver Facet
+        private IWebElement ColourFilterSteel()
+        {
+            return WebDriver.Browser.FindElement(By.XPath("//li[@id='fv_stainless20steel']"));
+        }
+
         /* Checks */
         public bool EspressoListerDisplayed()
         {
             return EspressoListerTitle().Displayed;
+        }
+
+        public bool FilterSteelDisplayed()
+        {
+            return ColourFilterSteel().Displayed;
         }
 
         /* Actions */
@@ -43,6 +54,11 @@ namespace selenium_ao.PageObjects
         public void ClickMoreInfoDeLonghi()
         {
             WebDriver.Browser.FindElement(By.XPath("//a[@class='product-page-link primaryButton moreInfo']")).Click();
+        }
+
+        public void ToggleColourFilterSteel()
+        {
+            WebDriver.Browser.FindElement(By.XPath("//li[@id='fv_stainless20steel']")).Click();
         }
     }
 }
