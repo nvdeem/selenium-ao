@@ -104,6 +104,7 @@
     <Compile Include="Drivers\WebDriver.cs" />
     <Compile Include="Steps\ToggleFacetToSteelTestSteps.cs" />
     <Compile Include="Steps\ToggleLowToHighTestSteps.cs" />
+    <Compile Include="Steps\ToggleBrandFilterTestSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

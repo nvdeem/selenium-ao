@@ -84,5 +84,10 @@ namespace selenium_ao.PageObjects
             var selectElement = new SelectElement(lowToHigh);
             selectElement.SelectByText("Price: Low to High");
         }
+
+        public void ClickSageCheckBox()
+        {
+            WebDriver.Browser.FindElement(By.XPath("//li[@id='fv_sage']//a[@class='filter-facet__list-item-value navlink ']")).Click();
+        }
     }
 }

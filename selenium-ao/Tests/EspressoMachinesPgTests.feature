@@ -21,3 +21,9 @@ Scenario: Toggle dropdown and select price low to high
 	Given I am on the espresso machines lister page
 	When I toggle the sort by dropdown to price low to high
 	Then the items are listed from lowest price to highest
+
+@Test4
+Scenario: Toggle Brand filter checkboxes
+	Given I am on the espresso machines lister page
+	When I check the brand filter check box for sage
+	Then only the sage products are displayed
