@@ -9,6 +9,7 @@ namespace selenium_ao.Steps
     [Binding]
     public class EspressoListerPgTestsSteps
     {
+        private const string stackTraceDivider = "------------- Stack Trace -------------";
         private readonly SmallAppliancesPg smallAppliancesPg = new SmallAppliancesPg();
         private readonly CoffeeMachinesPg coffeeMachinesPg = new CoffeeMachinesPg();
         private readonly EspressoListerPg espressoListerPg = new EspressoListerPg();
@@ -31,7 +32,7 @@ namespace selenium_ao.Steps
             catch (Exception e)
             {
                 Console.WriteLine("Error: Cannot assert that user is on Espresso lister page." + Environment.NewLine +
-                    "------------- Stack Trace -------------" + Environment.NewLine + e.StackTrace);
+                    stackTraceDivider + Environment.NewLine + e.StackTrace);
             }
         }
 
@@ -46,7 +47,7 @@ namespace selenium_ao.Steps
             catch (Exception e)
             {
                 Console.WriteLine("Error: Cannot assert that Grid view has been clicked." + Environment.NewLine +
-                     "------------- Stack Trace -------------" + Environment.NewLine + e.StackTrace);
+                     stackTraceDivider + Environment.NewLine + e.StackTrace);
             }
         }
 
@@ -69,7 +70,7 @@ namespace selenium_ao.Steps
             catch (Exception e)
             {
                 Console.WriteLine("Error: Cannot assert that the DeLonghi product page is displayed." + Environment.NewLine +
-                     "------------- Stack Trace -------------" + Environment.NewLine + e.StackTrace);
+                     stackTraceDivider + Environment.NewLine + e.StackTrace);
             }
         }
     }

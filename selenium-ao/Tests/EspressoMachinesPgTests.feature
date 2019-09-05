@@ -27,3 +27,9 @@ Scenario: Toggle Brand filter checkboxes
 	Given I am on the espresso machines lister page
 	When I check the brand filter check box for sage
 	Then only the sage products are displayed
+
+@Test5
+Scenario: Navigate to review page for item
+	Given I am on the espresso machines lister page
+	When I click on the reviews link
+	Then the reviews page is displayed for the selected product

@@ -18,7 +18,7 @@ namespace selenium_ao
             runHeadless.AddArgument("--headless");
 
             /*** UNCOMMENT TO RUN HEADLESS ***/
-            Browser = new ChromeDriver(/*runHeadless*/);
+            Browser = new ChromeDriver(runHeadless);
             Browser.Manage().Window.Maximize();
             Browser.Navigate().GoToUrl("https://beta-aol.ao-qa.com/small-appliances");
         } 

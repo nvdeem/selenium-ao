@@ -9,6 +9,7 @@ namespace selenium_ao
     [Binding]
     public class ToggleFacetToSteelTestSteps
     {
+        private const string stackTraceDivider = "------------- Stack Trace -------------";
         private readonly EspressoListerPg espressoListerPg = new EspressoListerPg();
 
         [When(@"I click the stainless steel facet")]
@@ -24,7 +25,7 @@ namespace selenium_ao
             catch (Exception e)
             {
                 Console.WriteLine("Error: Cannot assert on clicking the Stainless Steel facet." + Environment.NewLine +
-                    "------------- Stack Trace -------------" + Environment.NewLine + e.StackTrace);
+                    stackTraceDivider + Environment.NewLine + e.StackTrace);
             }
         }
         
@@ -40,7 +41,7 @@ namespace selenium_ao
             catch (Exception e)
             {
                 Console.WriteLine("Error: Cannot assert that the Stainless Steel products are displayed." + Environment.NewLine +
-                    "------------- Stack Trace -------------" + Environment.NewLine + e.StackTrace);
+                    stackTraceDivider + Environment.NewLine + e.StackTrace);
             }
         }
     }

@@ -8,6 +8,7 @@ namespace selenium_ao
     [Binding]
     public class CoffeeMachinesPgSteps
     {
+        private const string stackTraceDivider = "------------- Stack Trace -------------";
         private readonly SmallAppliancesPg smallAppliancesPg = new SmallAppliancesPg();
         private readonly CoffeeMachinesPg coffeeMachinesPg = new CoffeeMachinesPg();
 
@@ -22,7 +23,7 @@ namespace selenium_ao
             catch (Exception e)
             {
                 Console.WriteLine("Error: Cannot assert that user is on Small Appliances page." + Environment.NewLine +
-                    "------------- Stack Trace -------------" + Environment.NewLine + e.StackTrace);
+                    stackTraceDivider + Environment.NewLine + e.StackTrace);
             }
         }
 
@@ -38,7 +39,7 @@ namespace selenium_ao
             catch (Exception e)
             {
                 Console.WriteLine("Error: Cannot assert on View All button in Coffee Machines card." + Environment.NewLine +
-                    "------------- Stack Trace -------------" + Environment.NewLine + e.StackTrace);
+                    stackTraceDivider + Environment.NewLine + e.StackTrace);
             }
         }
 
@@ -54,7 +55,7 @@ namespace selenium_ao
             catch (Exception e)
             {
                 Console.WriteLine("Error: Cannot assert that user is on Coffee Machines page." + Environment.NewLine +
-                    "------------- Stack Trace -------------" + Environment.NewLine + e.StackTrace);
+                    stackTraceDivider + Environment.NewLine + e.StackTrace);
             }
         }
     }

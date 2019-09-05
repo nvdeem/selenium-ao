@@ -93,6 +93,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Drivers\Runner.cs" />
+    <Compile Include="Steps\NavigateToReviewPgTestSteps.cs" />
+    <Compile Include="PageObjects\DeLonghiReviewPg.cs" />
     <Compile Include="Steps\CoffeeMachinesPgSteps.cs" />
     <Compile Include="PageObjects\CoffeeMachinesPg.cs" />
     <Compile Include="PageObjects\DeLonghiProductPg.cs" />

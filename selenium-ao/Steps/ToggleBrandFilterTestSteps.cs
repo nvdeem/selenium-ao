@@ -8,6 +8,7 @@ namespace selenium_ao
     [Binding]
     public class ToggleBrandFilterTestSteps
     {
+        private const string stackTraceDivider = "------------- Stack Trace -------------";
         private readonly EspressoListerPg espressoListerPg = new EspressoListerPg();
 
         [When(@"I check the brand filter check box for sage")]
@@ -21,7 +22,7 @@ namespace selenium_ao
             catch (Exception e)
             {
                 Console.WriteLine("Error: Cannot assert that Sage checkbox is ticked." + Environment.NewLine +
-                    "------------- Stack Trace -------------" + Environment.NewLine + e.StackTrace);
+                    stackTraceDivider + Environment.NewLine + e.StackTrace);
             }
         }
         
@@ -37,7 +38,7 @@ namespace selenium_ao
             catch (Exception e)
             {
                 Console.WriteLine("Error: Cannot assert that only Sage products are displayed." + Environment.NewLine +
-                    "------------- Stack Trace -------------" + Environment.NewLine + e.StackTrace);
+                    stackTraceDivider + Environment.NewLine + e.StackTrace);
             }
         }
     }

@@ -9,6 +9,7 @@ namespace selenium_ao.Steps
     [Binding]
     public class ToggleLowToHighTestSteps
     {
+        private const string stackTraceDivider = "------------- Stack Trace -------------";
         private readonly EspressoListerPg espressoListerPg = new EspressoListerPg();
 
         [When(@"I toggle the sort by dropdown to price low to high")]
@@ -22,7 +23,7 @@ namespace selenium_ao.Steps
             catch (Exception e)
             {
                 Console.WriteLine("Error: Cannot assert that the Low to High option was selected." + Environment.NewLine +
-                    "------------- Stack Trace -------------" + Environment.NewLine + e.StackTrace);
+                    stackTraceDivider + Environment.NewLine + e.StackTrace);
             }
         }
         
@@ -39,7 +40,7 @@ namespace selenium_ao.Steps
             catch (Exception e)
             {
                 Console.WriteLine("Error: Cannot assert that the items are ordered from Low to High." + Environment.NewLine +
-                    "------------- Stack Trace -------------" + Environment.NewLine + e.StackTrace);
+                    stackTraceDivider + Environment.NewLine + e.StackTrace);
             }
         }
     }

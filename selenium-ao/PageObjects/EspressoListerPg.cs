@@ -89,5 +89,10 @@ namespace selenium_ao.PageObjects
         {
             WebDriver.Browser.FindElement(By.XPath("//li[@id='fv_sage']//a[@class='filter-facet__list-item-value navlink ']")).Click();
         }
+
+        public void ClickDeLonghiReviews()
+        {
+            WebDriver.Browser.FindElement(By.XPath("//a[contains(@href, '/product/ec685bk-delonghi-dedica-traditional-pump-espresso-coffee-machine-black-51597-66.aspx#reviewsSection')]")).Click();
+        }
     }
 }
