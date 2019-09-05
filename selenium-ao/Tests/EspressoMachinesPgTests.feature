@@ -1,7 +1,7 @@
 ﻿Feature: EspressoMachinesPgTests
 	In order to complete the end to end journey of adding an item to basket
 	As an end user
-	I want to ensure that I can reach the product page
+	I want to ensure that I can utilise the functionality on the Lister page
 
 @Test1
 Scenario: Expand DeLonghi item to display product page
