@@ -41,6 +41,7 @@ namespace selenium_ao.Steps
         {
             try
             {
+                Thread.Sleep(2000);
                 espressoListerPg.ClickGridView();
                 Console.WriteLine("Assertion: Grid view has been toggled.");
             }

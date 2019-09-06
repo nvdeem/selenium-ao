@@ -19,8 +19,8 @@ namespace selenium_ao.Steps
         {
             try
             {
-                smallAppliancesPg.ClickCoffeeBtn();
                 Assert.IsTrue(smallAppliancesPg.CheckCoffeeMachinesBtn());
+                smallAppliancesPg.ClickCoffeeBtn();
                 Console.WriteLine("Assertion: Coffee Machines button exists/is functional.");
             }
             catch (Exception e)
@@ -38,16 +38,16 @@ namespace selenium_ao.Steps
             {
                 Console.WriteLine("Error: Not able to assert that user is on Coffee Machines page." + Environment.NewLine +
                     stackTraceDivider + Environment.NewLine + e.StackTrace);
-            } 
+            }
         }
-        
+
         [When(@"I click the View All button on the Espresso card")]
         public void WhenIClickTheViewAllButtonOnTheEspressoCard()
         {
             try
             {
                 coffeeMachinesPg.ClickEspressoBtn();
-                Console.WriteLine("Assertion: Button is present and has been clicked.");
+                Console.WriteLine("Assertion: The espresso view all button is present and has been clicked.");
             }
             catch (Exception e)
             {
@@ -55,7 +55,7 @@ namespace selenium_ao.Steps
                     stackTraceDivider + Environment.NewLine + e.StackTrace);
             }
         }
-        
+
         [Then(@"the Espresso machines lister page is displayed")]
         public void ThenTheEspressoMachinesListerPageIsDisplayed()
         {

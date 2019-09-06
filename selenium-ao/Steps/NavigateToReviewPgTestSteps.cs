@@ -26,7 +26,7 @@ namespace selenium_ao
                     stackTraceDivider + Environment.NewLine + e.StackTrace);
             }
         }
-        
+
         [Then(@"the reviews page is displayed for the selected product")]
         public void ThenTheReviewsPageIsDisplayedForTheSelectedProduct()
         {

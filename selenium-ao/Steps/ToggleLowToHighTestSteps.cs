@@ -26,7 +26,7 @@ namespace selenium_ao.Steps
                     stackTraceDivider + Environment.NewLine + e.StackTrace);
             }
         }
-        
+
         [Then(@"the items are listed from lowest price to highest")]
         public void ThenTheItemsAreListedFromLowestPriceToHighest()
         {

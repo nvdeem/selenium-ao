@@ -1,4 +1,4 @@
-﻿ using NUnit.Framework;
+﻿using NUnit.Framework;
 using selenium_ao.PageObjects;
 using System;
 using TechTalk.SpecFlow;
@@ -32,8 +32,8 @@ namespace selenium_ao
         {
             try
             {
-                smallAppliancesPg.ClickCoffeeBtn();
                 Assert.IsTrue(smallAppliancesPg.CheckCoffeeMachinesBtn());
+                smallAppliancesPg.ClickCoffeeBtn();
                 Console.WriteLine("Assertion: Coffee Machines button is present and functions.");
             }
             catch (Exception e)

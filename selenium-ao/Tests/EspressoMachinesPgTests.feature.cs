@@ -32,7 +32,8 @@ namespace selenium_ao.Tests
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "EspressoMachinesPgTests", "\tIn order to complete the end to end journey of adding an item to basket\r\n\tAs an " +
-                    "end user\r\n\tI want to ensure that I can reach the product page", ProgrammingLanguage.CSharp, ((string[])(null)));
+                    "end user\r\n\tI want to ensure that I can utilise the functionality on the Lister p" +
+                    "age", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         

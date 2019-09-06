@@ -28,7 +28,7 @@ namespace selenium_ao
                     stackTraceDivider + Environment.NewLine + e.StackTrace);
             }
         }
-        
+
         [Then(@"only the stainless steel products are displayed")]
         public void ThenOnlyTheStainlessSteelProductsAreDisplayed()
         {
