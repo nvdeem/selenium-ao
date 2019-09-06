@@ -93,6 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Drivers\Runner.cs" />
+    <Compile Include="Steps\DeLonghiProductPgTestSteps.cs" />
     <Compile Include="Steps\NavigateToReviewPgTestSteps.cs" />
     <Compile Include="PageObjects\DeLonghiReviewPg.cs" />
     <Compile Include="Steps\CoffeeMachinesPgSteps.cs" />
@@ -112,6 +113,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="Tests\CoffeeMachinesPgTests.feature" />
+    <None Include="Tests\DeLonghiProductPgTests.feature" />
     <None Include="Tests\EspressoMachinesPgTests.feature" />
   </ItemGroup>
   <ItemGroup />
