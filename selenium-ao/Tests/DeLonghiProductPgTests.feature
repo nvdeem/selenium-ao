@@ -9,3 +9,12 @@ Scenario: Toggle colour option to red
 	When I click the choose colour lister
 	And I click the red option
 	Then the red version of the product is displayed
+
+@Test2
+Scenario: Share product via email
+	Given I am on the delonghi product page
+	And I click the share button
+	Then the email product wwindow is displayed
+	When I enter an email address
+	And I click the send product button
+	Then the email will be sent

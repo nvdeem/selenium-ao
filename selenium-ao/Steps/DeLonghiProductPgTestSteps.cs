@@ -21,9 +21,11 @@ namespace selenium_ao.Steps
             try
             {
                 smallAppliancesPg.ClickCoffeeBtn();
-                coffeeMachinesPg.ClickEspressoBtn();
-                espressoListerPg.ClickGridView();
                 Thread.Sleep(2000);
+                coffeeMachinesPg.ClickEspressoBtn();
+                Thread.Sleep(2000);
+                espressoListerPg.ClickGridView();
+                Thread.Sleep(5000);
                 espressoListerPg.ClickMoreInfoDeLonghi();
 
                 Thread.Sleep(2000);

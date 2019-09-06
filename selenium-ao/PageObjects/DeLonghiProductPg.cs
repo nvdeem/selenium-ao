@@ -17,6 +17,16 @@ namespace selenium_ao.PageObjects
             return WebDriver.Browser.FindElement(By.XPath("//ul[@class='colour-options-list disable-scrolling reveal open']"));
         }
 
+        private IWebElement ShareEmailWindow()
+        {
+            return WebDriver.Browser.FindElement(By.XPath("//div[@class='emailShare']"));
+        }
+
+        private IWebElement EmailSent()
+        {
+            return WebDriver.Browser.FindElement(By.XPath("//strong[@class='sendFinished']"));
+        }
+
         /* Checks */
 
         public bool DeLonghiProductNameDisplayed()
@@ -27,6 +37,16 @@ namespace selenium_ao.PageObjects
         public bool ColourPickerOpenDisplayed()
         {
             return ColourPickerOpen().Displayed;
+        }
+
+        public bool ShareEmailWindowDisplayed()
+        {
+            return ShareEmailWindow().Displayed;
+        }
+
+        public bool EmailSentDisplayed()
+        {
+            return EmailSent().Displayed;
         }
 
         /* Actions */
@@ -46,6 +66,21 @@ namespace selenium_ao.PageObjects
             var red = WebDriver.Browser.FindElement(By.XPath("//li[@class='swatch base-red swatch-red']"));
             var selectElement = new SelectElement(red);
             selectElement.SelectByText("Red");
+        }
+
+        public void ClickShareButton()
+        {
+            WebDriver.Browser.FindElement(By.XPath("//a[@class='shareProduct icon-share ctaButton']")).Click();
+        }
+
+        public void ClickSendProduct()
+        {
+            WebDriver.Browser.FindElement(By.XPath("//div[@class='emailShare']//a[@id='emailSendButton']")).Click();
+        }
+
+        public void EnterEmailInShareWindow()
+        {
+            WebDriver.Browser.FindElement(By.XPath("//div[@class='emailShare']//input[@id='shareInput']")).SendKeys("keke@dot-coin.com");
         }
     }
 }

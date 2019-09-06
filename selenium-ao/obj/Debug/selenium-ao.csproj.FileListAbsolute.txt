@@ -79,3 +79,4 @@ C:\Users\ahmedn\Documents\GitHub\selenium-ao\selenium-ao\obj\Debug\selenium-ao.c
 C:\Users\ahmedn\Documents\GitHub\selenium-ao\selenium-ao\obj\Debug\selenium-ao.csproj.CopyComplete
 C:\Users\ahmedn\Documents\GitHub\selenium-ao\selenium-ao\obj\Debug\selenium-ao.dll
 C:\Users\ahmedn\Documents\GitHub\selenium-ao\selenium-ao\obj\Debug\selenium-ao.pdb
+C:\Users\ahmedn\Documents\GitHub\selenium-ao\selenium-ao\obj\Debug\selenium-ao.csprojAssemblyReference.cache
